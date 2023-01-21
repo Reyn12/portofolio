@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #151e38;
+    color: white;
+}
+
+.title-name {
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.icon i {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.judul {
+    cursor: pointer;
+    padding: 3px 10px;
+    height: 80px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    text-align: center;
+    background-color: #243461;
+}
+.judul2{
+    transition: 0.2s all ease-in-out;
+
+}
+
+.active {
+    padding: 10px;
+    border-radius: 25px;
+    background-color: #3b56a3;}
+
+.judul2:hover{
+    padding: 10px;
+    border-radius: 25px;
+    background-color: #3b56a3;
+}
+
+.title {
+    color: #486bcf;
+}
+
+.content {
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+.content:hover{
+    border-radius: 25px;
+    padding: 8px;
+    background-color: #3b56a3;
+}
