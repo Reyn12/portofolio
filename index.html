@@ -232,18 +232,30 @@
       var contentPortofolio = document.getElementById("content-portofolio");
 
       blog.addEventListener("click", function() {
+        blog.classList.add("active");
+        pencapaian.classList.remove("active");
+        portofolio.classList.remove("active");
+
         contentBlog.style.display = "block";
         contentPencapaian.style.display = "none";
         contentPortofolio.style.display = "none";
       });
 
       pencapaian.addEventListener("click", function() {
+        blog.classList.remove("active");
+        pencapaian.classList.add("active");
+        portofolio.classList.remove("active");
+
         contentBlog.style.display = "none";
         contentPencapaian.style.display = "block";
         contentPortofolio.style.display = "none";
       });
 
       portofolio.addEventListener("click", function() {
+        blog.classList.remove("active");
+        pencapaian.classList.remove("active");
+        portofolio.classList.add("active");
+        
         contentBlog.style.display = "none";
         contentPencapaian.style.display = "none";
         contentPortofolio.style.display = "block";
