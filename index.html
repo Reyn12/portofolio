@@ -40,7 +40,7 @@
             </div>
           </div>
           <!-- Blog Section -->
-          <div class="content-block">
+          <div id="content-blog">
           <div class="row mt-3 align-items-center content">
             <div class="col-5">
               <img src="pictures/project1.png" alt="" width="100%" style="border-radius: 25px;">
@@ -92,7 +92,7 @@
           <!-- End Blog Section -->
 
           <!-- Pencapaian Section -->
-          <div class="content-block">
+          <div id="content-pencapaian">
           <div class="row mt-3">
             <div class="col-6 mb-3">
               <div class="card">
@@ -150,7 +150,7 @@
           <!-- End Pencapaian Section -->
 
           <!-- Portofolio Section -->
-          <div class="content-block">
+          <div id="content-portofolio">
           <div class="row mt-3">
             <div class="col-6 mb-3">
               <div class="card" style="height: 290px;">
@@ -223,11 +223,32 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     
     <script>
-      const blog = document.getElementById("blog");
-      const pencapain = document.getElementById("pencapain");
-      const portofolio = document.getElementById("portofolio");
+      var blog = document.getElementById("blog");
+      var pencapaian = document.getElementById("pencapaian");
+      var portofolio = document.getElementById("portofolio");
 
-      const contentBlog = document.getElementsByClassName("content-bloc")[0]
+      var contentBlog = document.getElementById("content-blog");
+      var contentPencapaian = document.getElementById("content-pencapaian");
+      var contentPortofolio = document.getElementById("content-portofolio");
+
+      blog.addEventListener("click", function() {
+        contentBlog.style.display = "block";
+        contentPencapaian.style.display = "none";
+        contentPortofolio.style.display = "none";
+      });
+
+      pencapaian.addEventListener("click", function() {
+        contentBlog.style.display = "none";
+        contentPencapaian.style.display = "block";
+        contentPortofolio.style.display = "none";
+      });
+
+      portofolio.addEventListener("click", function() {
+        contentBlog.style.display = "none";
+        contentPencapaian.style.display = "none";
+        contentPortofolio.style.display = "block";
+      });
+
     </script>
 
   </body>
