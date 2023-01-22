@@ -93,7 +93,7 @@
           <!-- End Blog Section -->
 
           <!-- Pencapaian Section -->
-          <div id="content-pencapaian" class="w3-animate-bottom">
+          <div id="content-pencapaian" class="w3-animate-bottom d-none">
           <div class="row mt-3">
             <div class="col-lg-6 col-sm-12 mb-3">
               <div class="card">
@@ -151,7 +151,7 @@
           <!-- End Pencapaian Section -->
 
           <!-- Portofolio Section -->
-          <div id="content-portofolio" class="w3-animate-bottom">
+          <div id="content-portofolio" class="w3-animate-bottom d-none">
           <div class="row mt-3">
             <div class="col-6 mb-3">
               <div class="card" style="height: 290px;">
@@ -237,9 +237,12 @@
         pencapaian.classList.remove("active");
         portofolio.classList.remove("active");
 
-        contentBlog.style.display = "block";
-        contentPencapaian.style.display = "none";
-        contentPortofolio.style.display = "none";
+        contentPencapaian.classList.add("d-none");
+        contentPortofolio.classList.add("d-none");
+
+        // contentBlog.style.display = "block";
+        // contentPencapaian.style.display = "none";
+        // contentPortofolio.style.display = "none";
       });
 
       pencapaian.addEventListener("click", function() {
@@ -247,9 +250,13 @@
         pencapaian.classList.add("active");
         portofolio.classList.remove("active");
 
-        contentBlog.style.display = "none";
-        contentPencapaian.style.display = "block";
-        contentPortofolio.style.display = "none";
+        contentBlog.classList.add("d-none");
+        contentPencapaian.classList.remove("d-none");
+        contentPortofolio.classList.add("d-none");
+
+        // contentBlog.style.display = "none";
+        // contentPencapaian.style.display = "block";
+        // contentPortofolio.style.display = "none";
       });
 
       portofolio.addEventListener("click", function() {
@@ -257,9 +264,13 @@
         pencapaian.classList.remove("active");
         portofolio.classList.add("active");
         
-        contentBlog.style.display = "none";
-        contentPencapaian.style.display = "none";
-        contentPortofolio.style.display = "block";
+        contentBlog.classList.add("d-none");
+        contentPencapaian.classList.add("d-none");
+        contentPortofolio.classList.remove("d-none");
+
+        // contentBlog.style.display = "none";
+        // contentPencapaian.style.display = "none";
+        // contentPortofolio.style.display = "block";
       });
 
     </script>
