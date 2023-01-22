@@ -23,8 +23,8 @@ body {
 
 .judul {
     cursor: pointer;
-    padding: 3px 10px;
-    height: 80px;
+    padding: 0px 7px;
+    height: 65px;
     justify-content: center;
     display: flex;
     align-items: center;
@@ -40,7 +40,8 @@ body {
 .active {
     padding: 10px;
     border-radius: 25px;
-    background-color: #3b56a3;}
+    background-color: #3b56a3;
+}
 
 .judul2:hover{
     padding: 10px;
@@ -55,10 +56,12 @@ body {
 .content {
     cursor: pointer;
     transition: 0.3s all ease-in-out;
+    border-radius: 25px;
+
 }
 
 .content:hover{
     border-radius: 25px;
-    padding: 8px;
+    padding: 8px 0px;
     background-color: #3b56a3;
 }
