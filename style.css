@@ -15,7 +15,9 @@ body {
     font-weight: 700;
     margin-top: 20px;
 }
-
+a {
+    text-decoration: none;
+}
 .icon i {
     font-size: 30px;
     cursor: pointer;
@@ -93,11 +95,38 @@ body {
     text-decoration: none;
 }
 
-/* @media screen and (max-width: 768px) {
-    .profile-kiri{
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        text-align: center;
+.judul2 a {
+    color: white;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 576px) {
+    .title-blog {
+        background-size: cover;
+        height: 200px;
+        overflow: hidden;
     }
-  } */
+    .col-5 img{
+        height: 200px;
+    }
+    .gambar img {
+        width: 380px;
+    }
+    .menu-atas {
+        padding: 10px 20px;
+        float: left;
+        background-color: #243461;
+        height: 40px;
+    }
+    .menu-atas a{
+        color: white;
+        text-decoration: none;
+    }
+    .menu-atas p{
+        opacity: 70%;
+        position: absolute;
+        top: 7px;
+        margin-left: 50px;
+    }
+  }
