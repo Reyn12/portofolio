@@ -110,8 +110,13 @@ a {
     .col-5 img{
         height: 200px;
     }
+    .gambar {
+        text-align: center;
+        margin-top: 10px;
+    }
     .gambar img {
-        width: 380px;
+        display: block;
+        width: 350px;
     }
     .menu-atas {
         padding: 10px 20px;
@@ -127,6 +132,6 @@ a {
         opacity: 70%;
         position: absolute;
         top: 7px;
-        margin-left: 50px;
+        margin-left: 20px;
     }
   }
